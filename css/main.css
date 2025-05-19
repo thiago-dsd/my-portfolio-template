@@ -49,6 +49,22 @@ body {
   margin-bottom: 54px;
 }
 
+.title-graduation {
+  font-size: 44px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 54px;
+  margin-bottom: 54px;
+}
+
+.title-languages {
+  font-size: 44px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 54px;
+  margin-bottom: 54px;
+}
+
 .description {
   font-size: 18px;
   font-weight: 400;
