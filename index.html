@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thiago Dias</title>
+
+    <!-- Ícone da aba do navegador -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <!-- Arquivos de estilo principais -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+    <!-- Biblioteca de animação AOS (Animate on Scroll) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- Cabeçalho do site -->
+    <header id="header" class="header">
+      <div class="container container-lg">
+        <div class="header-nav">
+          <!-- Logo do site -->
+          <a
+            href="#home"
+            class="logo"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            >T.Dias</a
+          >
+
+          <!-- Menu de navegação -->
+          <nav id="nav" class="nav">
+            <ul class="nav-list" data-aos="fade-down" data-aos-duration="1000">
+              <li class="nav-item">
+                <a href="#home" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a href="#projects" class="nav-link">Portfólio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contato</a>
+              </li>
+            </ul>
+
+            <!-- Botão para abrir/fechar menu mobile -->
+            <button id="nav-btn" class="nav-btn">
+              <img
+                id="nav-btn-img"
+                src="img/icons/open.svg"
+                alt="Botão de navegação"
+              />
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Seção principal / Hero -->
+    <section id="home" class="hero">
+      <div class="container container-lg">
+        <div
+          class="hero-row"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+        >
+          <!-- Conteúdo do texto de apresentação -->
+          <div class="hero-content">
+            <span class="hero-greeting">Olá, eu sou</span>
+            <h1 class="hero-heading">Thiago Dias</h1>
+            <span class="hero-heading-subtitle">Full Stack Developer</span>
+
+            <!-- Links para redes sociais -->
+            <div class="about-social-list">
+              <div class="social-links-row">
+                <a href="https://github.com/thiago-dsd">
+                  <img src="img/social_icons/github.svg" alt="GitHub" />
+                </a>
+                <a href="https://www.linkedin.com/in/thiago-dias-149b7626a/">
+                  <img src="img/social_icons/linkedin.svg" alt="LinkedIn" />
+                </a>
+                <a
+                  href="https://www.instagram.com/thiago.dsd?igsh=OHh3Z21ka24wcnJ2"
+                >
+                  <img src="img/social_icons/instagram.svg" alt="Instagram" />
+                </a>
+              </div>
+            </div>
+
+            <!-- Botões de chamada para ação -->
+            <div>
+              <a href="#projects" class="btn">Meu Portfólio</a>
+              <a href="#contact" class="btn btn-white">Converse comigo</a>
+            </div>
+          </div>
+
+          <!-- Imagem do herói -->
+          <div class="hero-img">
+            <img src="img/hero/hero.png" alt="Imagem de Thiago Dias" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Sobre Mim -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-title">
+          <h2 class="title">Sobre mim</h2>
+        </div>
+
+        <div class="about-row">
+          <!-- Texto sobre o autor -->
+          <div
+            class="about-content"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <p class="about-descr">
+              Olá, sou Thiago Dias, um desenvolvedor Full Stack apaixonado,
+              especializado em desenvolvimento web e mobile. Com mais de 3 anos
+              de experiência, adoro transformar ideias em criações impactantes
+              que conectam e inspiram. Fora do trabalho, gosto de explorar novos
+              lugares, aprender novas habilidades e capturar momentos da vida.
+              <br /><br />Vamos colaborar e dar vida à sua visão!
+            </p>
+            <div class="about-download-btn">
+              <a href="cv/cv-pt.pdf" class="btn btn-white">Baixar CV</a>
+            </div>
+          </div>
+
+          <!-- Habilidades com barras de progresso -->
+          <div
+            class="about-skills"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <div class="skill">
+              <div class="skill-title">Python</div>
+              <div class="skill-percent">56%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="56"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">Flutter/Dart</div>
+              <div class="skill-percent">21%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="21"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">TypeScript</div>
+              <div class="skill-percent">13%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="13"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">Go</div>
+              <div class="skill-percent">10%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="10"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Serviços oferecidos -->
+        <div class="services-row">
+          <div
+            class="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="50"
+          >
+            <img class="service-card-img" src="img/services/01.svg" alt="" />
+            <h3 class="service-card-title">UI/UX Design</h3>
+            <p>
+              Criação de interfaces intuitivas e bonitas que melhoram a
+              experiência do usuário.
+            </p>
+          </div>
+          <div
+            class="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <img class="service-card-img" src="img/services/02.svg" alt="" />
+            <h3 class="service-card-title">Desenvolvimento Frontend</h3>
+            <p>
+              Desenvolvimento de sites responsivos e modernos com tecnologias de
+              ponta.
+            </p>
+          </div>
+          <div
+            class="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <img class="service-card-img" src="img/services/03.svg" alt="" />
+            <h3 class="service-card-title">Desenvolvimento Backend</h3>
+            <p>
+              Construção de APIs seguras, rápidas e escaláveis para sistemas
+              robustos.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formação acadêmica -->
+      <div class="container">
+        <div class="about-title">
+          <h2 class="title">Formação</h2>
+          <a class="description">
+            Graduando em Ciência da Computação. Participação na OBI, com foco em
+            POO com Python e fundamentos sólidos em lógica de programação.
+          </a>
+        </div>
+      </div>
+
+      <!-- Idiomas -->
+      <div class="container">
+        <div class="about-title">
+          <h2 class="title">Idiomas</h2>
+        </div>
+        <div class="services-row">
+          <div
+            class="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="50"
+          >
+            <img class="service-card-img" src="img/languages/EN.png" alt="" />
+            <h3 class="service-card-title">Inglês</h3>
+            <p>Intermediário (B2)</p>
+          </div>
+          <div
+            class="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <img class="service-card-img" src="img/languages/BR.png" alt="" />
+            <h3 class="service-card-title">Português</h3>
+            <p>Nativo</p>
+          </div>
+          <div
+            class="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <img class="service-card-img" src="img/languages/DE.png" alt="" />
+            <h3 class="service-card-title">Alemão</h3>
+            <p>Básico (A1)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfólio de projetos -->
+    <section id="projects" class="projects">
+      <div class="container container-lg">
+        <div class="projects-title">
+          <h2 class="title">FastFood IA</h2>
+          <p class="description">
+            Uma IA amigável e eficiente para facilitar pedidos de FastFood.
+            Sugere, entende preferências e acompanha todo o processo.
+          </p>
+        </div>
+
+        <div class="projects-row">
+          <!-- Projeto 1 -->
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
+          >
+            <a href="https://github.com/thiago-dsd/fastfood">
+              <img class="project-img" src="img/works/01.png" alt="" />
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">FastFood</h5>
+                  <p class="white">Chat para recepção de pedidos</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Projeto 2 -->
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+          >
+            <a href="https://github.com/thiago-dsd/fastfood-core-api">
+              <img class="project-img" src="img/works/02.png" alt="" />
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">CoreAPI</h5>
+                  <p class="white">Armazenamento de pedidos</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Projeto 3 -->
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="600"
+            data-aos-duration="1000"
+          >
+            <a href="https://github.com/thiago-dsd/fastfood-agent-api">
+              <img class="project-img" src="img/works/03.png" alt="" />
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">Agent API</h5>
+                  <p class="white">Geração de pedidos</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-title">
+          <h2 class="title">Contato</h2>
+        </div>
+        <div class="contact-content">
+          <p>
+            Conte-me sobre seu projeto.<br />
+            Vamos conversar e trabalhar juntos!
+          </p>
+        </div>
+
+        <!-- Formulário de contato -->
+        <form class="contactForm" data-aos="zoom-in" data-aos-duration="1000">
+          <div class="input-box">
+            <input type="text" name="name" placeholder="Nome" required />
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Sua mensagem"
+            required
+          ></textarea>
+          <div
+            class="contact-button"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+          >
+            <button class="btn btn-red" name="submit" type="submit">
+              Enviar
+            </button>
+          </div>
+        </form>
+        <div class="response"></div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="social-links-row footer-social">
+            <a href="https://github.com/thiago-dsd"
+              ><img src="img/social_icons/github.svg" alt="GitHub"
+            /></a>
+            <a href="https://www.linkedin.com/in/thiago-dias-149b7626a/"
+              ><img src="img/social_icons/linkedin.svg" alt="LinkedIn"
+            /></a>
+            <a href="https://www.instagram.com/thiago.dsd?igsh=OHh3Z21ka24wcnJ2"
+              ><img src="img/social_icons/instagram.svg" alt="Instagram"
+            /></a>
+          </div>
+          <div class="footer-copyright">
+            <p>&copy; Copyright Thiago Dias 2025</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Botão "Voltar ao topo" -->
+    <div id="goToTop" class="goToTop">
+      <a href="#home"
+        ><img src="img/icons/arrow_up.svg" alt="Voltar ao topo"
+      /></a>
+    </div>
+
+    <!-- Scripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
